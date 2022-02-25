@@ -1,0 +1,14 @@
+//입력받은 년도가 윤년인지 아닌지를 계산하게 하는 코드
+#include <stdio.h>
+int main() 
+{
+    int y;
+    scanf ("%d", &y);
+    if (y%4==0 && y%100!=0)
+      printf ("윤년");
+    else if (y%400 == 0)
+      printf ("윤년");
+    else
+      printf ("윤년 아님");
+    return 0;
+}
